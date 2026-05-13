@@ -1,0 +1,7 @@
+services:
+  cytech_js_test:
+    build: .
+    ports:
+      - 8083:80
+    volumes:
+      - .:/var/www/html
