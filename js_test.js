@@ -12,3 +12,15 @@ function textCheck() {
         displayArea.style.color = "black";
     }
 }
+
+let colorIndex = 0;
+
+function changeColor() {
+    const colors = ['lightblue', 'lightgreen', 'lightcoral'];
+    document.body.style.backgroundColor = colors[colorIndex];
+    colorIndex++;
+
+    if (colorIndex >= colors.length) {
+        colorIndex = 0;
+    }
+}
