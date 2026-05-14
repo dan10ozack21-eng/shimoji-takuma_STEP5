@@ -16,6 +16,7 @@ function textCheck() {
         displayArea.style.color = "black";
 
         listCount++;
+        console.log("現在のリスト件数:"+ listCount);
 
         const newRow = document.createElement('tr');
         const textCell = document.createElement('td');
@@ -63,4 +64,8 @@ function changeColor() {
     if (colorIndex >= colors.length) {
         colorIndex = 0;
     }
+}
+
+for (let i = 1; i <= 5; i++) {
+    console.log("ループ回数:" + i);
 }
