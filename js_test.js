@@ -11,6 +11,8 @@ function textCheck() {
         displayArea.innerText = "入力された内容：" + inputText;
         displayArea.style.color = "black";
     }
+
+    displayArea.classList.toggle('highlight');
 }
 
 let colorIndex = 0;
